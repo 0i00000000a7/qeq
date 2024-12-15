@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>QεQ Random</title>
+  <style>
+html {
+  background-color: black;
+  color: white;
+  overflow: auto;
+  user-select: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition-duration: 0.15s
+}
+
+button {
+  border: solid 2px #444;
+  background-color: #1b1b1b;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn {
+  cursor: pointer;
+  font-size: 12px;
+  max-width: 250px;
+  padding: 7px 25px;
+  text-decoration: none;
+  border: 1px solid #777;
+  background: #333;
+  color: white;
+  display: inline-block
+}
+
+.btn:hover {
+  cursor: pointer;
+  font-size: 12px;
+  max-width: 250px;
+  padding: 7px 25px;
+  text-decoration: none;
+  border: 1px solid #999;
+  background: #555;
+  color: white;
+  display: inline-block
+}
+  </style>
+  <script src="./script.js" type="module"></script>
+</head>
+
+<body align="center">
+  <button id="throw" class="btn">抛硬币!</button><br>
+  <button id="change" class="btn">更改单次硬币朝上概率</button><br>
+  当前概率：<span id="a"></span><br>
+  最佳概率：<span id="b"></span><br>
+  每次抛硬币后朝上的概率：<span id="c"></span><br>
+  <span id="d"></span>
+</body>
+
+</html>
